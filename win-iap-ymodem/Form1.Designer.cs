@@ -35,23 +35,22 @@
             this.serialPort1 = new System.IO.Ports.SerialPort(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.lbl_Bps = new System.Windows.Forms.Label();
-            this.lbl_Pass = new System.Windows.Forms.Label();
             this.cbx_Port = new System.Windows.Forms.ComboBox();
             this.cbx_Baud = new System.Windows.Forms.ComboBox();
-            this.txb_FilePath = new System.Windows.Forms.TextBox();
-            this.btn_SelectFile = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btn_Clear = new System.Windows.Forms.Button();
             this.tbx_show = new System.Windows.Forms.TextBox();
             this.btn_Erase = new System.Windows.Forms.Button();
-            this.btn_Upload = new System.Windows.Forms.Button();
             this.btn_RunApp = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.btn_IAPMenu = new System.Windows.Forms.Button();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.cbx_PageSize = new System.Windows.Forms.ComboBox();
+            this.txb_FilePath = new System.Windows.Forms.TextBox();
+            this.btn_SelectFile = new System.Windows.Forms.Button();
+            this.lbl_Pass = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.cbx_PageSize = new System.Windows.Forms.ComboBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -103,15 +102,6 @@
             this.lbl_Bps.TabIndex = 3;
             this.lbl_Bps.Text = "波特率：";
             // 
-            // lbl_Pass
-            // 
-            this.lbl_Pass.AutoSize = true;
-            this.lbl_Pass.Location = new System.Drawing.Point(19, 30);
-            this.lbl_Pass.Name = "lbl_Pass";
-            this.lbl_Pass.Size = new System.Drawing.Size(65, 12);
-            this.lbl_Pass.TabIndex = 4;
-            this.lbl_Pass.Text = "文件路径：";
-            // 
             // cbx_Port
             // 
             this.cbx_Port.FormattingEnabled = true;
@@ -145,24 +135,6 @@
             this.cbx_Baud.Name = "cbx_Baud";
             this.cbx_Baud.Size = new System.Drawing.Size(98, 20);
             this.cbx_Baud.TabIndex = 6;
-            // 
-            // txb_FilePath
-            // 
-            this.txb_FilePath.BackColor = System.Drawing.SystemColors.Window;
-            this.txb_FilePath.Location = new System.Drawing.Point(21, 54);
-            this.txb_FilePath.Name = "txb_FilePath";
-            this.txb_FilePath.Size = new System.Drawing.Size(155, 21);
-            this.txb_FilePath.TabIndex = 7;
-            // 
-            // btn_SelectFile
-            // 
-            this.btn_SelectFile.Location = new System.Drawing.Point(112, 25);
-            this.btn_SelectFile.Name = "btn_SelectFile";
-            this.btn_SelectFile.Size = new System.Drawing.Size(64, 23);
-            this.btn_SelectFile.TabIndex = 8;
-            this.btn_SelectFile.Text = "选择文件";
-            this.btn_SelectFile.UseVisualStyleBackColor = true;
-            this.btn_SelectFile.Click += new System.EventHandler(this.btn_SelectFile_Click);
             // 
             // groupBox1
             // 
@@ -220,16 +192,6 @@
             this.btn_Erase.UseVisualStyleBackColor = true;
             this.btn_Erase.Click += new System.EventHandler(this.btn_Erase_Click);
             // 
-            // btn_Upload
-            // 
-            this.btn_Upload.Location = new System.Drawing.Point(324, 336);
-            this.btn_Upload.Name = "btn_Upload";
-            this.btn_Upload.Size = new System.Drawing.Size(99, 28);
-            this.btn_Upload.TabIndex = 13;
-            this.btn_Upload.Text = "读取固件UpLoad";
-            this.btn_Upload.UseVisualStyleBackColor = true;
-            this.btn_Upload.Click += new System.EventHandler(this.btn_Upload_Click);
-            // 
             // btn_RunApp
             // 
             this.btn_RunApp.Location = new System.Drawing.Point(631, 336);
@@ -262,19 +224,41 @@
             this.btn_IAPMenu.UseVisualStyleBackColor = true;
             this.btn_IAPMenu.Click += new System.EventHandler(this.btn_IAPMenu_Click);
             // 
-            // groupBox3
+            // txb_FilePath
             // 
-            this.groupBox3.Controls.Add(this.cbx_PageSize);
-            this.groupBox3.Controls.Add(this.label1);
-            this.groupBox3.Controls.Add(this.lbl_Pass);
-            this.groupBox3.Controls.Add(this.btn_SelectFile);
-            this.groupBox3.Controls.Add(this.txb_FilePath);
-            this.groupBox3.Location = new System.Drawing.Point(13, 191);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(190, 173);
-            this.groupBox3.TabIndex = 17;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "文件设置";
+            this.txb_FilePath.BackColor = System.Drawing.SystemColors.Window;
+            this.txb_FilePath.Location = new System.Drawing.Point(21, 54);
+            this.txb_FilePath.Name = "txb_FilePath";
+            this.txb_FilePath.Size = new System.Drawing.Size(155, 21);
+            this.txb_FilePath.TabIndex = 7;
+            // 
+            // btn_SelectFile
+            // 
+            this.btn_SelectFile.Location = new System.Drawing.Point(112, 25);
+            this.btn_SelectFile.Name = "btn_SelectFile";
+            this.btn_SelectFile.Size = new System.Drawing.Size(64, 23);
+            this.btn_SelectFile.TabIndex = 8;
+            this.btn_SelectFile.Text = "选择文件";
+            this.btn_SelectFile.UseVisualStyleBackColor = true;
+            this.btn_SelectFile.Click += new System.EventHandler(this.btn_SelectFile_Click);
+            // 
+            // lbl_Pass
+            // 
+            this.lbl_Pass.AutoSize = true;
+            this.lbl_Pass.Location = new System.Drawing.Point(19, 30);
+            this.lbl_Pass.Name = "lbl_Pass";
+            this.lbl_Pass.Size = new System.Drawing.Size(65, 12);
+            this.lbl_Pass.TabIndex = 4;
+            this.lbl_Pass.Text = "文件路径：";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(19, 102);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 12);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "包长度：";
             // 
             // cbx_PageSize
             // 
@@ -291,14 +275,19 @@
             this.cbx_PageSize.Size = new System.Drawing.Size(98, 20);
             this.cbx_PageSize.TabIndex = 10;
             // 
-            // label1
+            // groupBox3
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 102);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 12);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "包长度：";
+            this.groupBox3.Controls.Add(this.cbx_PageSize);
+            this.groupBox3.Controls.Add(this.label1);
+            this.groupBox3.Controls.Add(this.lbl_Pass);
+            this.groupBox3.Controls.Add(this.btn_SelectFile);
+            this.groupBox3.Controls.Add(this.txb_FilePath);
+            this.groupBox3.Location = new System.Drawing.Point(13, 191);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(190, 173);
+            this.groupBox3.TabIndex = 17;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "文件设置";
             // 
             // Form1
             // 
@@ -309,7 +298,6 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.btn_IAPMenu);
             this.Controls.Add(this.btn_RunApp);
-            this.Controls.Add(this.btn_Upload);
             this.Controls.Add(this.btn_Erase);
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.groupBox2);
@@ -336,23 +324,22 @@
         private System.IO.Ports.SerialPort serialPort1;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label lbl_Bps;
-        private System.Windows.Forms.Label lbl_Pass;
         private System.Windows.Forms.ComboBox cbx_Port;
         private System.Windows.Forms.ComboBox cbx_Baud;
-        private System.Windows.Forms.TextBox txb_FilePath;
-        private System.Windows.Forms.Button btn_SelectFile;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btn_Erase;
-        private System.Windows.Forms.Button btn_Upload;
         private System.Windows.Forms.Button btn_RunApp;
         private System.Windows.Forms.TextBox tbx_show;
         private System.Windows.Forms.Button btn_Update;
         private System.Windows.Forms.Button btn_Clear;
         private System.Windows.Forms.Button btn_IAPMenu;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.ComboBox cbx_PageSize;
+        private System.Windows.Forms.TextBox txb_FilePath;
+        private System.Windows.Forms.Button btn_SelectFile;
+        private System.Windows.Forms.Label lbl_Pass;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cbx_PageSize;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }
 

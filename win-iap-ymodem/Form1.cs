@@ -81,7 +81,7 @@ namespace win_iap_ymodem
         private void openControlBtn()
         {
             btn_Update.Enabled = true;
-            btn_Upload.Enabled = true;
+            //btn_Upload.Enabled = true;
             //btn_Erase.Enabled = true;
             btn_IAPMenu.Enabled = true;
             btn_RunApp.Enabled = true;
@@ -94,7 +94,7 @@ namespace win_iap_ymodem
         private void closeControlBtn()
         {
             btn_Update.Enabled = false;
-            btn_Upload.Enabled = false;
+            //btn_Upload.Enabled = false;
             //btn_Erase.Enabled = false;
             btn_IAPMenu.Enabled = false;
             btn_RunApp.Enabled = false;
@@ -372,7 +372,13 @@ namespace win_iap_ymodem
         /// <param name="e"></param>
         private void btn_IAPMenu_Click(object sender, EventArgs e)
         {
-            serialPort1.Write("menu\r\n");
+            byte[] reboot = new byte[15] { 0x0F, 0x06, 0x01, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x07 };
+            //string reboot = new string "0F";
+            //serialPort1.Write("menu\r\n");
+
+            serialPort1.Write(reboot,0,15);
+            serialPort1.Write("\r\n");
+            //serialPort1.WriteLine(reboot);
         }
 
 

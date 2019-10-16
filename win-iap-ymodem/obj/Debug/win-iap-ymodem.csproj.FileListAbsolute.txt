@@ -14,3 +14,12 @@ F:\IAP\winapp-iap-ymodem\win-iap-ymodem\obj\Debug\win_iap_ymodem.Properties.Reso
 F:\IAP\winapp-iap-ymodem\win-iap-ymodem\obj\Debug\win-iap-ymodem.csproj.GenerateResource.Cache
 F:\IAP\winapp-iap-ymodem\win-iap-ymodem\obj\Debug\win-iap-ymodem.exe
 F:\IAP\winapp-iap-ymodem\win-iap-ymodem\obj\Debug\win-iap-ymodem.pdb
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win-iap-ymodem.csprojResolveAssemblyReference.cache
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win_iap_ymodem.Form1.resources
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win_iap_ymodem.Properties.Resources.resources
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win-iap-ymodem.csproj.GenerateResource.Cache
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win-iap-ymodem.csproj.CoreCompileInputs.cache
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win-iap-ymodem.exe
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\obj\Debug\win-iap-ymodem.pdb
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\bin\Debug\win-iap-ymodem.exe
+D:\xueyusky\gitReponsitory\IAP_Update\winapp-iap-uart\win-iap-ymodem\bin\Debug\win-iap-ymodem.pdb
